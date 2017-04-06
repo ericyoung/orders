@@ -13,22 +13,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
+title: BYP
+email: youngeric@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  When you place an order, it will be reviewed by a BYP account executive. If
+  more information is needed, s/he will need to contact you before it can be
+  sent to production. Please make sure you include your contact number on the
+  order form.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: ericyoung
+github_username:  ericyoung
+# timezone: America/Chicago
+# encoding: "utf-8"
+# plugins_dir:  _plugins
+# layouts_dir:  _layouts
+# data_dir:     _data
+# includes_dir: _includes
+
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: forty-jekyll-theme
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  style: compressed

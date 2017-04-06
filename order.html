@@ -1,0 +1,464 @@
+---
+layout: page
+title: Order Form
+permalink: /order/
+---
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/{{ site.email }}" method="POST">
+
+        <div class="field half first">
+          <button>Upload Spreadsheet</button>
+        </div>
+        <div class="field half">
+          <button>Load From Spreadsheet</button>
+        </div>
+
+        <div class="field">
+					<label><h1>BYP Order Form</h1></label>
+				</div>
+
+				<div class="field">
+					<label for="todays_date">Today's Date</label>
+					<input type="text" name="todays_date" class="datepicker" placeholder="e.g. 3/26/2018" />
+				</div>
+				<div class="field half first">
+					<label for="radio_received_by_date">Radio must be received by</label>
+					<input type="text" name="radio_received_by_date" class="datepicker" placeholder="e.g. 3/26/2018" />
+				</div>
+        <div class="field half">
+					<label for="tv_received_by_date">TV must be received by</label>
+					<input type="text" name="tv_received_by_date" class="datepicker" placeholder="e.g. 3/26/2018" />
+				</div>
+        <div class="field half first">
+					<label for="new_order_revision">New Order</label>
+					<input type="radio" name="new_order_revision" value="new_order" checked>
+				</div>
+        <div class="field half">
+					<label for="new_order_revision">Revise Order</label>
+					<input type="radio" name="new_order_revision" value="revise_order">
+				</div>
+        <div class="field half first">
+					<label for="require_approval">Require Approval</label>
+					<input type="checkbox" name="require_approval" />
+				</div>
+        <div class="field half">
+					<label for="require_approval">Rush Charge</label>
+					<input type="checkbox" name="rush_charge" />
+				</div>
+
+        <div class="field">
+					<label for="promoter_contact_name">Contact Name</label>
+					<input type="text" name="promoter_contact_name" />
+				</div>
+        <div class="field">
+					<label for="promoter_company_email">Contact Email</label>
+					<input type="email" name="promoter_company_email" />
+				</div>
+        <div class="field half first">
+					<label for="promoter_contact_phone">Contact Phone</label>
+					<input type="text" name="promoter_contact_phone" placeholder="Phone" />
+				</div>
+        <div class="field half">
+					<label for="promoter_contact_phone_ext">Extension</label>
+          <input type="text" name="promoter_contact_phone_ext" placeholder="Ext" />
+				</div>
+        <div class="field half first">
+					<label for="promoter_contact_phone_alt">Alt Contact Phone</label>
+					<input type="text" name="promoter_contact_phone_alt" placeholder="Phone" />
+				</div>
+        <div class="field half">
+					<label for="promoter_contact_phone_alt_ext">Extension</label>
+          <input type="text" name="promoter_contact_phone_alt_ext" placeholder="Ext" />
+				</div>
+        <div class="field">
+					<label for="promoter_company_name">Promoter Company Name</label>
+					<input type="text" name="promoter_company_name" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label for="headliner">Headliner</label>
+					<input type="text" name="headliner" />
+				</div>
+        <div class="field half">
+					<label for="special_guest">Special Guest</label>
+          <input type="text" name="special_guest" />
+				</div>
+        <div class="field half first">
+					<label for="market">Market</label>
+					<input type="text" name="market" />
+				</div>
+        <div class="field half">
+					<label for="venue">Venue</label>
+          <input type="text" name="venue" />
+				</div>
+        <div class="field half first">
+					<label for="include_the_in_venue">Include "The" in Venue</label>
+					<input type="checkbox" name="include_the_in_venue" />
+				</div>
+        <div class="field half">
+					<label for="primary_show_day">Primary Show Day</label>
+          <input type="text" name="primary_show_day" placeholder="e.g. Saturday" />
+				</div>
+        <div class="field half first">
+					<label for="primary_show_date">Primary Show Date</label>
+          <input type="text" name="primary_show_day" class="datepicker" placeholder="e.g. 3/26/2018" />
+				</div>
+        <div class="field half">
+					<label for="primary_show_time">Primary Show Time</label>
+          <input type="text" name="primary_show_time" placeholder="e.g. 7:00 PM" />
+				</div>
+        <div class="field">
+					<label for="additional_show_dates">Additional Show Dates</label>
+          <input type="text" name="additional_show_dates" placeholder="e.g. 3/27/2018, 3/28/2018, 3/29/2018" />
+				</div>
+
+        <hr/>
+
+        <div class="field">
+					<label for="intro_line">Intro Line</label>
+          <input type="text" name="intro_line"/>
+				</div>
+        <div class="field">
+					<label for="outro_line">Outro Line</label>
+          <input type="text" name="outro_line"/>
+				</div>
+        <div class="field half first">
+					<label for="welcomes_presents">Welcomes/Presents</label>
+          <input type="text" name="welcomes_presents" />
+				</div>
+        <div class="field half">
+					<label for="produced_by">Produced By</label>
+          <input type="text" name="produced_by" />
+				</div>
+        <div class="field half first">
+					<label for="promoter_mention">Promoter Mention</label>
+          <input type="checkbox" name="promoter_mention" />
+				</div>
+        <div class="field half">
+					<label for="produce_id_only">Produced ID Only</label>
+          <input type="checkbox" name="produce_id_only" />
+				</div>
+
+        <div class="field">
+					<label for="radio_ids">Radio IDs</label>
+          <input type="text" name="radio_ids"/>
+				</div>
+        <div class="field">
+					<label for="tv_ids">TV IDs</label>
+          <input type="text" name="tv_ids"/>
+				</div>
+        <div class="field">
+					<label for="required_logos">Required Logos</label>
+          <input type="text" name="required_logos"/>
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label for="on_sale_day_time">Ticket Information</label>
+          <input type="text" name="on_sale_day_time" placeholder="Tickets On Sale Day/Time" />
+				</div>
+        <div class="field half">
+					<label for="reserved_seats">Reserved Seats</label>
+          <input type="checkbox" name="reserved_seats" />
+				</div>
+        <div class="field">
+          <input type="text" name="ticket_information_locations" placeholder="Ticket Location Information" />
+				</div>
+        <div class="field">
+          <textarea name="special_instructions_tickets" rows="2" placeholder="Special Ticket Instructions"></textarea>
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label for="ship_radio_to_email">Ship Radio to Email</label>
+          <input type="text" name="ship_radio_to_email" />
+				</div>
+        <div class="field half">
+					<label for="extreme_reach">Extreme Reach</label>
+          <input type="text" name="extreme_reach" />
+				</div>
+        <div class="field">
+					<label for="call_letters_sys_codes">Call Letters / SYS Codes</label>
+          <input type="text" name="call_letters_sys_codes"/>
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label for="radio_presale_length">Radio Presale</label>
+          <input type="text" name="radio_presale_length" placeholder="Length in seconds (e.g. 60)" />
+				</div>
+        <div class="field half">
+					<label for="radio_on_sale_now_length">Radio On Sale Now</label>
+          <input type="text" name="radio_on_sale_now_length" placeholder="Length in seconds (e.g. 60)" />
+				</div>
+        <div class="field half first">
+					<label for="radio_week_of_length">Radio Week Of</label>
+          <input type="text" name="radio_week_of_length" placeholder="Length in seconds (e.g. 60)" />
+				</div>
+        <div class="field half">
+					<label for="radio_day_prior_length">Radio Day Prior</label>
+          <input type="text" name="radio_day_prior_length" placeholder="Length in seconds (e.g. 60)" />
+				</div>
+        <div class="field half first">
+					<label for="radio_day_of_length">Radio Day Of</label>
+          <input type="text" name="radio_day_of_length" placeholder="Length in seconds (e.g. 60)" />
+				</div>
+        <div class="field half">
+					<label for="radio_notes">Additional Radio Notes</label>
+          <textarea name="radio_notes" rows="3"></textarea>
+				</div>
+
+        <div class="field half first">
+					<label for="tv_presale_length">TV Presale</label>
+          <input type="text" name="tv_presale_length" placeholder="Length in seconds (e.g. 30)" />
+				</div>
+        <div class="field half">
+					<label for="tv_on_sale_now_length">TV On Sale Now</label>
+          <input type="text" name="tv_on_sale_now_length" placeholder="Length in seconds (e.g. 30)" />
+				</div>
+        <div class="field half first">
+					<label for="tv_week_of_length">TV Week Of</label>
+          <input type="text" name="tv_week_of_length" placeholder="Length in seconds (e.g. 30)" />
+				</div>
+        <div class="field half">
+					<label for="tv_day_prior_length">TV Day Prior</label>
+          <input type="text" name="tv_day_prior_length" placeholder="Length in seconds (e.g. 30)" />
+				</div>
+        <div class="field half first">
+					<label for="tv_day_of_length">TV Day Of</label>
+          <input type="text" name="tv_day_of_length" placeholder="Length in seconds (e.g. 30)" />
+				</div>
+        <div class="field half">
+					<label for="tv_notes">Additional TV Notes</label>
+          <textarea name="tv_notes" rows="3"></textarea>
+				</div>
+
+        <div class="field">
+					<label for="important_notes">Any Additional Notes Relevant To This Order</label>
+          <textarea name="important_notes" rows="5"></textarea>
+				</div>
+
+        <hr/>
+
+        <div class="field">
+					<label><h1>Shipping Sheet</h1></label>
+				</div>
+
+        <div class="field">
+					<label for="fedex_number">Fedex Number</label>
+          <input type="text" name="fedex_number" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label>Ship to Company</label>
+          <input type="text" name="ship_to_company" placeholder="Name of Company" />
+				</div>
+        <div class="field half">
+					<label>Ship to Person</label>
+          <input type="text" name="ship_to_person" placeholder="Name of Person" />
+				</div>
+        <div class="field">
+					<label>Address</label>
+          <input type="text" name="address" placeholder="Complete Address, including City, State, and Zip" />
+				</div>
+        <div class="field">
+					<label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone Number" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label>Ship to Company</label>
+          <input type="text" name="ship_to_company" placeholder="Name of Company" />
+				</div>
+        <div class="field half">
+					<label>Ship to Person</label>
+          <input type="text" name="ship_to_person" placeholder="Name of Person" />
+				</div>
+        <div class="field">
+					<label>Address</label>
+          <input type="text" name="address" placeholder="Complete Address, including City, State, and Zip" />
+				</div>
+        <div class="field">
+					<label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone Number" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label>Ship to Company</label>
+          <input type="text" name="ship_to_company" placeholder="Name of Company" />
+				</div>
+        <div class="field half">
+					<label>Ship to Person</label>
+          <input type="text" name="ship_to_person" placeholder="Name of Person" />
+				</div>
+        <div class="field">
+					<label>Address</label>
+          <input type="text" name="address" placeholder="Complete Address, including City, State, and Zip" />
+				</div>
+        <div class="field">
+					<label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone Number" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label>Ship to Company</label>
+          <input type="text" name="ship_to_company" placeholder="Name of Company" />
+				</div>
+        <div class="field half">
+					<label>Ship to Person</label>
+          <input type="text" name="ship_to_person" placeholder="Name of Person" />
+				</div>
+        <div class="field">
+					<label>Address</label>
+          <input type="text" name="address" placeholder="Complete Address, including City, State, and Zip" />
+				</div>
+        <div class="field">
+					<label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone Number" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+
+        <hr/>
+
+        <div class="field half first">
+					<label>Ship to Company</label>
+          <input type="text" name="ship_to_company" placeholder="Name of Company" />
+				</div>
+        <div class="field half">
+					<label>Ship to Person</label>
+          <input type="text" name="ship_to_person" placeholder="Name of Person" />
+				</div>
+        <div class="field">
+					<label>Address</label>
+          <input type="text" name="address" placeholder="Complete Address, including City, State, and Zip" />
+				</div>
+        <div class="field">
+					<label>Phone</label>
+          <input type="text" name="phone" placeholder="Phone Number" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+        <div class="field">
+					<label>Dubs (Quantity and Type)</label>
+          <input type="text" name="dubs" placeholder="e.g. 3 DVDs" />
+				</div>
+
+        <hr/>
+
+				<ul class="actions">
+					<li><input type="submit" value="Send Order" class="special" onclick="return confirm('Ready to send this order?');" /></li>
+					<li><input type="reset" value="Clear Form" onclick="return confirm('Are you sure you want to clear this form?');" /></li>
+				</ul>
+			</form>
+		</section>
+	</div>
+</section>
