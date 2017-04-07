@@ -1,0 +1,27 @@
+---
+layout: page
+title: Upload Spreadsheet
+permalink: /upload/
+---
+
+<section>
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/{{ site.email }}" method="POST" enctype="multipart/form-data">
+        <div class="field">
+					<label><h1>Upload File</h1></label>
+				</div>
+
+        <div class="field">
+          <input type="file" name="datafile" size="40">
+				</div>
+
+        <ul class="actions">
+					<li><input type="submit" value="Submit" class="special" onclick="return confirm('Are you sure?');" /></li>
+					<li><input type="reset" value="Clear Form" /></li>
+				</ul>
+
+			</form>
+		</section>
+	</div>
+</section>

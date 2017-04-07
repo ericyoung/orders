@@ -21,9 +21,14 @@
     	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
-	    {% if page.layout != "home" %}
+	    {% if page.layout != "home" && page.layout != "form" %}
 	    	<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 	    {% endif %}
+		{% endfor %}
+		{% for page in site.pages %}
+	    {% if page.layout == "form" %}
+	      <li><a href="{{ "" | absolute_url }}">Order Form</a></li>
+    	{% endif %}
 		{% endfor %}
 	</ul>
 
