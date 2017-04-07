@@ -3,20 +3,24 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <!-- Banner -->
+
   <section id="banner" class="major">
     <div class="inner">
       <header class="major">
         <h1>{{ page.landing-title }}</h1>
       </header>
       <div class="content">
-        <p style="text-transform: uppercase;">{{ site.description }}</p>
+        <p style="text-transform: uppercase;">{{ page.description }}</p>
         <ul class="actions">
           <li><a href="form/" class="button next scrolly">Get Started</a></li>
         </ul>
       </div>
+      <div class="content">
+        <p style="text-transform: uppercase;">{{ page.content }}</p>
+      </div>
     </div>
   </section>
+  
   {% include footer.html %}
 </body>
 </html>

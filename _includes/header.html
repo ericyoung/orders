@@ -12,7 +12,7 @@
 	</nav>
 </header>
 
-<!-- Menu -->
+<!-- menu -->
 <nav id="menu">
 	<ul class="links">
     {% for page in site.pages %}
@@ -27,9 +27,13 @@
 		{% endfor %}
 		{% for page in site.pages %}
 	    {% if page.layout == "form" %}
-	      <li><a href="{{ absolute_url }}">Order Form</a></li>
+	      <li><a href="{{ absolute_url }}">Order TV/Radio Online</a></li>
     	{% endif %}
 		{% endfor %}
+		<li><a href="http://byp.com/forms/BYP_TV_Radio_Order_Form.xls" target="_blank">TV/Radio Form (Spreadsheet)</a></li>
+		<li><a href="http://admats.concerts.com/PrintOrderForm.aspx" target="_blank">ADMAT Order Form (Online)</a></li>
+		<li><a href="https://byp.wetransfer.com/" target="_blank">Send Files (Via WeTransfer)</a></li>
+		<li><a href="http://byp.com/forms/BYP_Terms_and_Conditions.pdf" target="_blank">BYP Terms &amp; Conditions (PDF)</a></li>
 	</ul>
-
 </nav>
+<!-- /menu -->
