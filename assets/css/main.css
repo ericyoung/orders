@@ -3908,3 +3908,7 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
+.actions > a {
+	margin-bottom: 3px !important;
+}
