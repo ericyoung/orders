@@ -27,7 +27,7 @@
 		{% endfor %}
 		{% for page in site.pages %}
 	    {% if page.layout == "form" %}
-	      <li><a href="{{ "" | absolute_url }}">Order Form</a></li>
+	      <li><a href="{{ absolute_url }}">Order Form</a></li>
     	{% endif %}
 		{% endfor %}
 	</ul>
