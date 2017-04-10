@@ -3086,6 +3086,11 @@
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
+			background-image: url('/assets/images/byp.jpg');
+			width:70px;
+			border-right:1px solid #0c0c0c;
+			border-bottom:1px solid #0c0c0c;
+			box-shadow: 1px 0px 10px #000;
 		}
 
 			#header .logo strong {
