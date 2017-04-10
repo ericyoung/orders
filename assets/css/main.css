@@ -3912,3 +3912,15 @@
 .actions > a {
 	margin-bottom: 3px !important;
 }
+
+.ui-datepicker {
+	z-index: 10000 !important;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+	border: none !important;
+}
+
+.ui-datepicker-calendar th {
+	color: #333 !important;
+}
